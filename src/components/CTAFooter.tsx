@@ -24,25 +24,25 @@ export const CTAFooter = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-            <Button 
-              variant="outline" 
-              size="lg" 
+            <Button
+              variant="outline"
+              size="lg"
               className="bg-white text-primary border-white hover:bg-white/90 hover:text-primary group"
             >
-              Start Your Free Trial
+              Start Free Now
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button 
-              variant="outline" 
+            <Button
+              variant="outline"
               size="lg"
               className="border-white text-white hover:bg-white hover:text-primary"
             >
-              Schedule a Demo
+              Watch Demo
             </Button>
           </div>
 
           <p className="text-sm text-white/70 pt-4">
-            No credit card required • 14-day free trial • Cancel anytime
+            No credit card required • 50 conversations free • Cancel anytime
           </p>
         </div>
       </div>
