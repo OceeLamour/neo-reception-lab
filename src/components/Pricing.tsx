@@ -2,34 +2,69 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Check } from "lucide-react";
 
-const plans = [
+interface Plan {
+  name: string;
+  price: string;
+  period: string;
+  description: string;
+  badge?: string;
+  features: string[];
+  cta: string;
+  variant: "outline" | "hero";
+  popular?: boolean;
+}
+
+const plans: Plan[] = [
+  {
+    name: "Free",
+    price: "$0",
+    period: "/month",
+    description: "Test VoiceSteer with real customers — no credit card needed",
+    features: [
+      "50 conversations per month",
+      "Web Chat only",
+      "Basic scheduling",
+      "Email support",
+      "15-day conversation history",
+      "Human handoff included",
+    ],
+    cta: "Start Free Now",
+    variant: "outline" as const,
+  },
   {
     name: "Starter",
     price: "$49",
     period: "/month",
-    description: "Perfect for small businesses testing the waters",
+    description: "Small businesses ready to scale",
     features: [
-      "500 calls per month",
+      "500 conversations per month",
+      "Web Chat + SMS",
       "Basic scheduling",
       "Email support",
-      "Single phone number",
-      "Call transcripts",
+      "30-day conversation history",
+      "Human handoff included",
+      "Knowledge base",
     ],
     cta: "Start Free Trial",
     variant: "outline" as const,
   },
   {
-    name: "Professional",
+    name: "Business",
     price: "$149",
     period: "/month",
-    description: "Most popular for growing service businesses",
+    description: "The plan 85% of service businesses choose",
+    badge: "All-in-One",
     features: [
-      "2,000 calls per month",
+      "2,000 conversations per month",
+      "Phone + WhatsApp + SMS + Web",
       "Advanced scheduling & CRM",
       "Priority support",
-      "Multiple phone numbers",
+      "90-day conversation history",
       "Custom voice & personality",
       "Analytics dashboard",
+      "Human handoff included",
+      "Appointment booking",
+      "Shopify, Square, Calendar integrations",
     ],
     cta: "Start Free Trial",
     variant: "hero" as const,
@@ -37,16 +72,19 @@ const plans = [
   },
   {
     name: "Enterprise",
-    price: "Custom",
-    period: "",
-    description: "Tailored solutions for large operations",
+    price: "$499",
+    period: "/month",
+    description: "Advanced features and dedicated support for large operations",
     features: [
-      "Unlimited calls",
-      "Custom integrations",
+      "10,000+ conversations per month",
+      "All Channels + Custom Integrations",
+      "Unlimited agents",
       "Dedicated account manager",
+      "Unlimited conversation history",
       "White-label options",
-      "Advanced AI training",
-      "SLA guarantees",
+      "Custom AI training",
+      "99.9% SLA guarantee",
+      "Human handoff included",
     ],
     cta: "Contact Sales",
     variant: "outline" as const,
@@ -72,9 +110,9 @@ export const Pricing = () => {
         </div>
 
         {/* Pricing cards */}
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
           {plans.map((plan, index) => (
-            <Card 
+            <Card
               key={index}
               className={`relative p-8 bg-background/95 backdrop-blur-sm border-2 transition-all duration-300 hover:-translate-y-2 hover:shadow-glow ${
                 plan.popular ? "border-green md:-translate-y-4 shadow-soft" : "border-border"
@@ -83,6 +121,11 @@ export const Pricing = () => {
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-gradient-cta rounded-full text-sm font-semibold text-white">
                   Most Popular
+                </div>
+              )}
+              {plan.badge && !plan.popular && (
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-gradient-primary rounded-full text-sm font-semibold text-white">
+                  {plan.badge}
                 </div>
               )}
 

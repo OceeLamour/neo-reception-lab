@@ -29,18 +29,30 @@ export const Hero = () => {
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground font-inter leading-relaxed max-w-xl">
-              VoiceSteer transforms every call into an opportunity. Handle inquiries, schedule appointments, 
+              VoiceSteer transforms every call into an opportunity. Handle inquiries, schedule appointments,
               and delight customers 24/7 with intelligent AI that truly understands.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="hero" size="lg" className="group">
-                Start Free Trial
+                Start Free Now
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button variant="outline" size="lg">
                 Watch Demo
               </Button>
+            </div>
+
+            {/* Trust messaging for free tier */}
+            <div className="flex flex-wrap items-center gap-3 text-sm text-muted-foreground">
+              <span className="flex items-center gap-2">
+                <span className="flex h-2 w-2 rounded-full bg-green animate-pulse-glow" />
+                Start free
+              </span>
+              <span className="text-muted-foreground/50">•</span>
+              <span>No credit card required</span>
+              <span className="text-muted-foreground/50">•</span>
+              <span>50 conversations included</span>
             </div>
 
             {/* Trust indicators */}
