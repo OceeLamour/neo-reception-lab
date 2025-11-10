@@ -1,0 +1,136 @@
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Check } from "lucide-react";
+
+const plans = [
+  {
+    name: "Starter",
+    price: "$49",
+    period: "/month",
+    description: "Perfect for small businesses testing the waters",
+    features: [
+      "500 calls per month",
+      "Basic scheduling",
+      "Email support",
+      "Single phone number",
+      "Call transcripts",
+    ],
+    cta: "Start Free Trial",
+    variant: "outline" as const,
+  },
+  {
+    name: "Professional",
+    price: "$149",
+    period: "/month",
+    description: "Most popular for growing service businesses",
+    features: [
+      "2,000 calls per month",
+      "Advanced scheduling & CRM",
+      "Priority support",
+      "Multiple phone numbers",
+      "Custom voice & personality",
+      "Analytics dashboard",
+    ],
+    cta: "Start Free Trial",
+    variant: "hero" as const,
+    popular: true,
+  },
+  {
+    name: "Enterprise",
+    price: "Custom",
+    period: "",
+    description: "Tailored solutions for large operations",
+    features: [
+      "Unlimited calls",
+      "Custom integrations",
+      "Dedicated account manager",
+      "White-label options",
+      "Advanced AI training",
+      "SLA guarantees",
+    ],
+    cta: "Contact Sales",
+    variant: "outline" as const,
+  },
+];
+
+export const Pricing = () => {
+  return (
+    <section className="relative py-20 md:py-28 overflow-hidden">
+      {/* Gradient background */}
+      <div className="absolute inset-0 bg-gradient-hero opacity-90" />
+      <div className="absolute inset-0 bg-background/30 backdrop-blur-sm" />
+
+      <div className="container mx-auto px-4 relative z-10">
+        {/* Section header */}
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <h2 className="font-poppins text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-white">
+            Simple, Transparent Pricing
+          </h2>
+          <p className="text-lg text-white/90 font-inter">
+            Start free for 14 days. No credit card required. Cancel anytime.
+          </p>
+        </div>
+
+        {/* Pricing cards */}
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {plans.map((plan, index) => (
+            <Card 
+              key={index}
+              className={`relative p-8 bg-background/95 backdrop-blur-sm border-2 transition-all duration-300 hover:-translate-y-2 hover:shadow-glow ${
+                plan.popular ? "border-green md:-translate-y-4 shadow-soft" : "border-border"
+              }`}
+            >
+              {plan.popular && (
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-gradient-cta rounded-full text-sm font-semibold text-white">
+                  Most Popular
+                </div>
+              )}
+
+              <div className="space-y-6">
+                <div>
+                  <h3 className="font-poppins text-2xl font-bold text-foreground mb-2">
+                    {plan.name}
+                  </h3>
+                  <p className="text-sm text-muted-foreground">
+                    {plan.description}
+                  </p>
+                </div>
+
+                <div className="flex items-baseline gap-2">
+                  <span className="font-poppins text-5xl font-bold text-foreground">
+                    {plan.price}
+                  </span>
+                  <span className="text-muted-foreground">{plan.period}</span>
+                </div>
+
+                <Button 
+                  variant={plan.variant} 
+                  size="lg" 
+                  className="w-full"
+                >
+                  {plan.cta}
+                </Button>
+
+                <ul className="space-y-3 pt-6 border-t border-border">
+                  {plan.features.map((feature, featureIndex) => (
+                    <li key={featureIndex} className="flex items-start gap-3">
+                      <Check className="h-5 w-5 text-green shrink-0 mt-0.5" />
+                      <span className="text-sm text-muted-foreground">
+                        {feature}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </Card>
+          ))}
+        </div>
+
+        {/* Trust message */}
+        <p className="text-center mt-12 text-white/80 font-inter">
+          All plans include our core AI technology and regular updates
+        </p>
+      </div>
+    </section>
+  );
+};
