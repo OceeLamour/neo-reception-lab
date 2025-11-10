@@ -45,7 +45,7 @@ const features = [
 
 export const Features = () => {
   return (
-    <section className="py-20 md:py-28 bg-muted">
+    <section id="product" className="py-20 md:py-28 bg-muted">
       <div className="container mx-auto px-4">
         {/* Section header */}
         <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">

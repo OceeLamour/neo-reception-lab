@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 
 export const CTAFooter = () => {
   return (
-    <section className="relative py-20 md:py-28 overflow-hidden">
+    <section id="support" className="relative py-20 md:py-28 overflow-hidden">
       {/* Vibrant gradient background */}
       <div className="absolute inset-0 bg-gradient-cta" />
       

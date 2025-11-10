@@ -4,7 +4,7 @@ import heroImage from "@/assets/hero-illustration.png";
 
 export const Hero = () => {
   return (
-    <section className="relative overflow-hidden bg-background">
+    <section id="home" className="relative overflow-hidden bg-background">
       {/* Gradient wave background */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-0 left-0 w-full h-32 bg-gradient-primary opacity-20 blur-3xl animate-wave" />

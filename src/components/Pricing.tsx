@@ -93,7 +93,7 @@ const plans: Plan[] = [
 
 export const Pricing = () => {
   return (
-    <section className="relative py-20 md:py-28 overflow-hidden">
+    <section id="pricing" className="relative py-20 md:py-28 overflow-hidden">
       {/* Gradient background */}
       <div className="absolute inset-0 bg-gradient-hero opacity-90" />
       <div className="absolute inset-0 bg-background/30 backdrop-blur-sm" />

@@ -5,6 +5,8 @@ import { Features } from "@/components/Features";
 import { TransparencyControl } from "@/components/TransparencyControl";
 import { UseCases } from "@/components/UseCases";
 import { Pricing } from "@/components/Pricing";
+import { Integrations } from "@/components/Integrations";
+import { Docs } from "@/components/Docs";
 import { CTAFooter } from "@/components/CTAFooter";
 import { Footer } from "@/components/Footer";
 
@@ -18,6 +20,8 @@ const Index = () => {
       <TransparencyControl />
       <UseCases />
       <Pricing />
+      <Integrations />
+      <Docs />
       <CTAFooter />
       <Footer />
     </main>
