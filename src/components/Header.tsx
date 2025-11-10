@@ -3,6 +3,7 @@ import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
+import voiceSteerLogo from "@/assets/VoiceSteer_NewLogo_192.png";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -39,9 +40,11 @@ export const Header = () => {
       <div className="container mx-auto h-full flex items-center justify-between px-6 lg:px-8">
         {/* Logo with Icon + Wordmark */}
         <a href="#home" className="flex items-center gap-3 group" aria-label="VoiceSteer Home">
-          <div className="w-11 h-11 rounded-full bg-gradient-to-br from-[#0099A8] to-[#4BD37B] flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
-            <span className="text-white font-bold text-xl">V</span>
-          </div>
+          <img
+            src={voiceSteerLogo}
+            alt="VoiceSteer Logo"
+            className="h-10 lg:h-12 w-auto group-hover:scale-105 transition-transform"
+          />
           <span
             className={cn(
               "font-poppins font-semibold text-xl lg:text-2xl transition-colors duration-300",
