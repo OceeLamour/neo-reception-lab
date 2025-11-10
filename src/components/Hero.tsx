@@ -29,8 +29,9 @@ export const Hero = () => {
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground font-inter leading-relaxed max-w-xl">
-              VoiceSteer transforms every call into an opportunity. Handle inquiries, schedule appointments,
-              and delight customers 24/7 with intelligent AI that truly understands.
+              Answer Calls. Book Appointments.
+              <br />
+              Let Your AI Handle the Rest.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
