@@ -7,38 +7,38 @@ const resources = [
     icon: Rocket,
     title: "Quick Start Guide",
     description: "Get your AI receptionist up and running in under 5 minutes",
-    link: "#support",
+    link: "/documentation#setup",
     badge: "Popular",
   },
   {
     icon: BookOpen,
     title: "Documentation",
     description: "Complete guides for setup, configuration, and customization",
-    link: "#support",
+    link: "/documentation",
   },
   {
     icon: Video,
     title: "Video Tutorials",
     description: "Step-by-step video walkthroughs for all features",
-    link: "#support",
+    link: "/documentation#support",
   },
   {
     icon: Code,
     title: "API Reference",
     description: "Technical documentation for developers and integrations",
-    link: "#support",
+    link: "/documentation#support",
   },
   {
     icon: FileText,
     title: "Best Practices",
     description: "Learn how top businesses optimize their AI receptionists",
-    link: "#support",
+    link: "/documentation#support",
   },
   {
     icon: HelpCircle,
     title: "FAQ",
     description: "Answers to the most common questions",
-    link: "#support",
+    link: "/documentation#troubleshooting",
   },
 ];
 
@@ -105,14 +105,14 @@ export const Docs = () => {
             Our support team is here to help you succeed. Contact us for personalized assistance, documentation, and resources.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#support">
+            <a href="/documentation#support">
               <Button variant="hero" size="lg">
                 Contact Support
               </Button>
             </a>
-            <a href="#support">
+            <a href="/documentation">
               <Button variant="outline" size="lg">
-                Schedule a Call
+                View Full Documentation
               </Button>
             </a>
           </div>
