@@ -33,7 +33,7 @@ export const HowItWorks = () => {
             How It Works
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            From first ring to follow-up, VoiceSteer handles every customer interaction with intelligence and care.
+            Four simple steps from first ring to follow-up.
           </p>
         </div>
 
@@ -74,7 +74,7 @@ export const HowItWorks = () => {
             size="lg"
             className="rounded-full px-10 py-6 text-lg"
           >
-            See VoiceSteer in Action
+            Watch Demo
           </Button>
         </div>
       </div>

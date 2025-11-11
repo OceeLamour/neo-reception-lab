@@ -54,7 +54,7 @@ export const Integrations = () => {
             </span>
           </h2>
           <p className="text-lg text-muted-foreground font-inter">
-            VoiceSteer works with the tools you already use. Connect your favorite apps in minutes, no technical expertise required.
+            Works with your existing tools. No code required.
           </p>
         </div>
 

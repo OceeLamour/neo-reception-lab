@@ -5,12 +5,12 @@ const features = [
   {
     icon: Eye,
     title: "Full Visibility",
-    description: "View every conversation transcript, call recording, and action taken—nothing is hidden.",
+    description: "View every conversation, recording, and action—nothing hidden.",
   },
   {
     icon: Shield,
     title: "Data Privacy First",
-    description: "Your customer data stays yours. We comply with GDPR, HIPAA, and SOC 2 standards.",
+    description: "Your customer data stays yours. GDPR, HIPAA & SOC 2 compliant.",
   },
   {
     icon: Settings,
@@ -84,7 +84,7 @@ export const TransparencyControl = () => {
             Built for Trust, Designed for You
           </h3>
           <p className="text-muted-foreground leading-relaxed mb-6">
-            VoiceSteer is built on the principle that AI should empower, not obscure. Every feature is designed to give you complete oversight while delivering exceptional customer experiences.
+            AI that empowers your business with complete visibility and control.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <div className="flex items-center gap-2 bg-muted px-4 py-2 rounded-full">

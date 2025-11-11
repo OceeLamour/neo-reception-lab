@@ -8,19 +8,19 @@ const features = [
   {
     icon: Bot,
     title: "Intelligent Conversations",
-    description: "AI that truly understands context, sentiment, and intent to provide natural, human-like interactions.",
+    description: "AI conversations that sound natural and understand context.",
     gradient: "from-teal to-aqua",
   },
   {
     icon: Clock,
     title: "Always Available",
-    description: "Never miss a call again. Your AI receptionist works 24/7, handling inquiries whenever customers need you.",
+    description: "24/7 availability. Never miss a call again.",
     gradient: "from-green to-aqua",
   },
   {
     icon: CalendarCheck,
     title: "Smart Scheduling",
-    description: "Automatically book appointments, send reminders, and manage your calendar without lifting a finger.",
+    description: "Book appointments and send reminders automatically.",
     gradient: "from-violet to-aqua",
   },
   {
@@ -38,7 +38,7 @@ const features = [
   {
     icon: Shield,
     title: "Enterprise Security",
-    description: "Bank-level encryption and compliance standards keep your customer data safe and private.",
+    description: "Bank-level encryption keeps customer data secure.",
     gradient: "from-green to-violet",
   },
 ];
@@ -50,14 +50,12 @@ export const Features = () => {
         {/* Section header */}
         <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
           <h2 className="font-poppins text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            Everything You Need to
-            <br />
             <span className="bg-gradient-accent bg-clip-text text-transparent">
-              Delight Every Caller
+              Built to Handle Every Call
             </span>
           </h2>
           <p className="text-lg text-muted-foreground font-inter">
-            Powerful features designed for service businesses who value every customer interaction
+            Everything your business needs to automate customer calls
           </p>
         </div>
 
