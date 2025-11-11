@@ -7,38 +7,38 @@ const resources = [
     icon: Rocket,
     title: "Quick Start Guide",
     description: "Get your AI receptionist up and running in under 5 minutes",
-    link: "#",
+    link: "#support",
     badge: "Popular",
   },
   {
     icon: BookOpen,
     title: "Documentation",
     description: "Complete guides for setup, configuration, and customization",
-    link: "#",
+    link: "#support",
   },
   {
     icon: Video,
     title: "Video Tutorials",
     description: "Step-by-step video walkthroughs for all features",
-    link: "#",
+    link: "#support",
   },
   {
     icon: Code,
     title: "API Reference",
     description: "Technical documentation for developers and integrations",
-    link: "#",
+    link: "#support",
   },
   {
     icon: FileText,
     title: "Best Practices",
     description: "Learn how top businesses optimize their AI receptionists",
-    link: "#",
+    link: "#support",
   },
   {
     icon: HelpCircle,
     title: "FAQ",
     description: "Answers to the most common questions",
-    link: "#",
+    link: "#support",
   },
 ];
 
@@ -102,15 +102,19 @@ export const Docs = () => {
             Need More Help?
           </h3>
           <p className="text-muted-foreground mb-6">
-            Our support team is here to help you succeed. Get personalized assistance when you need it.
+            Our support team is here to help you succeed. Contact us for personalized assistance, documentation, and resources.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="hero" size="lg">
-              Contact Support
-            </Button>
-            <Button variant="outline" size="lg">
-              Schedule a Call
-            </Button>
+            <a href="#support">
+              <Button variant="hero" size="lg">
+                Contact Support
+              </Button>
+            </a>
+            <a href="#support">
+              <Button variant="outline" size="lg">
+                Schedule a Call
+              </Button>
+            </a>
           </div>
         </div>
       </div>
